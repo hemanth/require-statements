@@ -1,6 +1,6 @@
 {
   "name": "require-statements",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Generators require statements from `package.json`.",
   "license": "MIT",
   "repository": "hemanth/require-statements",
@@ -15,8 +15,8 @@
   "scripts": {
     "test": "xo && mocha"
   },
-  "bin" : {
-    "require-statements" : "./cli.js"
+  "bin": {
+    "require-statements": "./cli.js"
   },
   "files": [
     "index.js",
