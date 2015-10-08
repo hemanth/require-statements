@@ -1,0 +1,45 @@
+{
+  "name": "require-statements",
+  "version": "0.0.0",
+  "description": "Generators require statements from `package.json`.",
+  "license": "MIT",
+  "repository": "hemanth/require-statements",
+  "author": {
+    "name": "Hemanth.HM",
+    "email": "hemanth.hm@gmail.com",
+    "url": "h3manth.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "bin" : {
+    "require-statements" : "./cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "package.json",
+    "require",
+    "modules",
+    "list"
+  ],
+  "dependencies": {
+    "camelcase": "^1.2.1",
+    "meow": "^3.4.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "xo": "^0.7.1"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  }
+}
