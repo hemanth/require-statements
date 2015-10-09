@@ -35,13 +35,19 @@ import meow from meow;
 
 ## API
 
-### requireStatements([path])
+### requireStatements([flag][path])
 
 #### path
 
 Type: `string`
 
 Path to the `package.json` defaults to `./package.json`
+
+### flag
+
+Type: `string`
+
+`--import` for import statements instead.
 
 ## License
 
