@@ -24,6 +24,12 @@ console.log(requireStatements('./package.json'));
 var camelcase = require(camelcase);
 var meow = require(meow);
 */
+
+console.log(requireStatements('./package.json',{import: true}));
+/*
+import camelcase from camelcase;
+import meow from meow;
+*/
 ```
 
 
