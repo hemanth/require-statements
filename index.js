@@ -13,8 +13,8 @@ module.exports = function (path, flags) {
 	var packageJSON = require(path);
 	return Object.keys(packageJSON.dependencies || {}).map(function (module) {
 		if (flags && flags.import) {
-			return 'import ' + camelCase(module) + ' from ' + module + ';';
+			return 'import ' + camelCase(module) + ' from \'' + module + '\';';
 		}
-		return 'var ' + camelCase(module) + ' = require(' + module + ');';
+		return 'var ' + camelCase(module) + ' = require(\'' + module + '\');';
 	}).join('\n');
 };
