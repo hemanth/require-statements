@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "camelcase": "^1.2.1",
-    "meow": "^3.4.2"
+    "meow": "^6.0.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
