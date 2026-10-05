@@ -1,5 +1,5 @@
 'use strict';
-var camelCase = require('camelcase');
+var camelCase = ((m) => (m && m.default) ? m.default : m)(require('camelcase'));
 var cwd = require('process').cwd();
 
 module.exports = function (path, flags) {
